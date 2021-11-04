@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>個人簡歷</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+     <!--<script src="hw1.js"></script>-->
+    <css src="hw1.css"></css>
+  <style>
+    .div1 {
+            float: left;
+            padding: 15px;
+        }
+    .img1 {
+        position: absolute;
+        width: 100%;
+        left: 730px;
+        top: 50px
+	}
+    span1 {
+        position: absolute;
+        left:730px;
+        top:100px;
+        display: inline-block;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        background-color: rgb(250, 146, 207);
+    }
+    span2 {
+        position: absolute;
+        left:730px;
+        top:500px;
+        display: inline-block;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        background-color: rgb(250, 146, 207);
+    }
+    span3 {
+        position: absolute;
+        left:1100px;
+        top:300px;
+        display: inline-block;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        background-color: rgb(250, 146, 207);
+    }
+    span4 {
+        position: absolute;
+        left:1100px;
+        top:700px;
+        display: inline-block;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        background-color: rgb(250, 146, 207);
+    }
+    span5 {
+        position: absolute;
+        left:730px;
+        top:900px;
+        display: inline-block;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        background-color: rgb(250, 146, 207);
+    }
+    .ri{
+        float: right;
+    }
+    </style>
+    <script>
+        function myFunction(){
+            let x=document.getElementById("demo")
+            x.innerHTML="<p style='padding:30px 80px;'></p>";
+            x.innerHTML+="<ul style='padding-left:150px;'>";
+            x.innerHTML+="<li style='font-size: 28px;'>跳舞</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>彈鋼琴</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>吹長號</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>拉小提琴</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>唱歌</li></ul>";   
+            document.getElementById("d").style="display:none";
+        }
+        function myFunction1(){
+            let x=document.getElementById("demo1")
+            x.innerHTML="<p style='padding:40px 80px;'></p>";
+            x.innerHTML+="<ul style='padding-left:150px;'>";
+            x.innerHTML+="<li style='font-size: 28px;'>C++</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>Python</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>Kotlin</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>HTML</li></ul>";   
+            document.getElementById("d1").style="display:none";
+        }
+        function myFunction2(){
+            let x=document.getElementById("demo2")
+            x.innerHTML="<p style='padding:60px 80px;'></p>";
+            x.innerHTML+="<ul style='padding-left:150px;'>";
+            x.innerHTML+="<li style='font-size: 28px;'>英文中級通過</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>多益830</li></ul>";   
+            document.getElementById("d2").style="display:none";
+        }
+        function myFunction3(){
+            let x=document.getElementById("demo3")
+            x.innerHTML="<p style='padding:40px 80px;'></p>";
+            x.innerHTML+="<ul style='padding-left:150px;'>";
+            x.innerHTML+="<li style='font-size: 28px;'>熱舞社</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>籃球社</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>排球社</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>社會服務社</li></ul>";   
+            document.getElementById("d3").style="display:none";
+        }
+        function myFunction4(){
+            let x=document.getElementById("demo4")
+            x.innerHTML="<p style='padding:40px 80px;'></p>";
+            x.innerHTML+="<ul style='padding-left:150px;'>";
+            x.innerHTML+="<li style='font-size: 28px;'>資訊服務競賽第三名</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>生物科展第三名</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>生物專題研究競賽佳作</li>";
+            x.innerHTML+="<li style='font-size: 28px;'>數學科展佳作</li></ul>";   
+            document.getElementById("d4").style="display:none";
+        }
+    </script>
+</head>
+<body style="background-color: rgb(186, 173, 212);">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #A830FF;">
+        <a class="navbar-brand" href="#">
+            <img src="aa.png" alt="logo" style="width:40px;">
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#0" class="nav-link">自傳</a>
+          </li>
+          <li class="nav-item">
+            <a href="#1" class="nav-link">才能</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#2">國中</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#3">高中</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#4">大學</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#5">課外</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="window.print()">列印</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+            <li><a class="nav-link" href="login.html">登入</a></li>
+        </ul>
+    </nav>
+<div style="padding:50px 80px;"></div>
+<div class="container">
+    <h1><b>個人簡歷</b></h1>
+    <div1 class="card" style="width:500px">
+        <div class="card-body">
+            <img class="card-img-top" src="65279.jpg" alt="Card image" style="width:100%">
+            <div style="padding:15px 100px;"></div>
+            <h2 class="card-title"><b>蕭襄</b></h2>
+            <h3 class="card-text">Angela</h3>
+        </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <i class='fas fa-venus-mars' style='font-size:28px'>  女</i>
+                </li>
+                <li class="list-group-item">
+                    <i class='fas fa-phone' style='font-size:28px'>  0925196930</i>
+                </li>
+                <a id="0"></a>
+                <li class="list-group-item">
+                    <i class='fas fa-home' style='font-size:28px'>  竹北市</i>
+                </li>
+                <li class="list-group-item">
+                    <i class='far fa-calendar-alt' style='font-size:28px'>  90/08/29</i>
+                </li>
+                <li class="list-group-item">
+                    <i class='fa fa-envelope' style='font-size:28px'>  c550006742@gmail.com</i>
+                </li>
+                <li class="list-group-item">
+                    <i class='far fa-comment' style='font-size:28px'>  <a href="https://www.facebook.com/xiao.xiang.3591/">facebook</a></i>
+                </li>
+            </ul>
+    </div1>
+    <div style="padding:30px 80px;"></div>
+    <div class="card" style="width:1200px">
+        <div class="card-body">
+            <a id="1"></a>
+            <h3><b>自傳</b></h3>
+            <p style="font-size:25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是個充滿創意的人，在小組討論中，都能有創新的思考，使分組討論更生動有趣；在上課期間，面對老師開放式的提問，也都能從不同面向思考問題，並勇於表達意見；我曾參加國際特赦組織的寫信馬拉松活動，向外國政府表達對人權的看法。另外，同學和老師們對我的評價皆為擅長表達、人緣佳，我多次為國語朗讀比賽選手，並兩次當選班級模範生。</p>
+        </div>
+    </div>
+    
+    <div style="padding:30px 80px;"></div>
+    <div class="card" style="width:1200px">
+        <div class="card-body">
+            <a id="2"></a>
+            <h3><b>多元才能</b></h3>
+            <p style="font-size:25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我曾學過舞蹈，並在國中、高中校內舞蹈成果發表會，皆擔任統籌工作；我亦擅長美術，榮獲燈籠製作比賽佳作；在游泳方面，四式皆擅長；在音樂方面，曾榮獲新竹縣賽長號獨奏優等、鋼琴獨奏甲等、小提琴獨奏甲等。另外，因為我有快速的學習能力，長號僅初學一年，即榮獲新竹縣賽獨奏優等，並在高二合唱比賽擔任指揮帶領班級，獲得優勝。</p>
+        </div>
+    </div>
+    <div style="padding:30px 80px;"></div>
+    <div class="card" style="width:1200px">
+        <div class="card-body">
+            <a id="3"></a>
+            <h3><b>國中求學</b></h3>
+            <p style="font-size:25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;國中就讀成功國中藝術才能音樂班，參加管弦樂團，負責吹奏長號，我曾代表學校參賽，榮獲多項榮譽，如全國管弦樂合奏優等、新竹縣賽特優等。 參加全國管弦樂合奏榮獲優等。國一時以「小小葉子大大力量」為題目，研究水對各種葉子的衝擊影響，參加新竹縣生物科科展，榮獲第三名；國二時再次參加科展，以「來自星星的祕密」為題目，研究魔幻星數，參加新竹縣數學科科展，榮獲佳作。另外，我曾兩度被老師推選參加作文比賽，榮獲坤泰盃作文比賽佳作、租稅作文比賽佳作。</p>
+        </div>
+    </div>
+    <div style="padding:30px 80px;"></div>
+    <div class="card" style="width:1200px">
+        <div class="card-body">
+            <a id="4"></a>
+            <h3><b>高中求學</b></h3>
+            <p style="font-size:25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高中就讀新竹女中，課業方面，我多次為班上第一名，高中總成績為校排前8%。因總成績為全班第一，榮獲ZYXEL合勤獎學金，也曾兩度獲選班級模範生。我熱心為班上付出，自願每天為同學訂購午餐，曾擔任班長、副班長、風紀股長，展現領導風範；同學對我的能力抱持肯定態度，在班級事務中屢次推選我負責統籌工作，如統籌園遊會、合唱比賽教學兼指揮、化妝遊行服裝組組長，我每次都能帶領團隊，獲得良好的成績；班上亦常推派我參加各種比賽，如英文說故事、國語朗讀比賽。
+        </div>
+    </div>
+    <div style="padding:30px 80px;"></div>
+    <div class="card" style="width:1200px">
+        <div class="card-body">
+            <a id="5"></a>
+            <h3><b>大學求學</b></h3>
+            <p style="font-size:25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大學就讀國立陽明交通大學資訊管理與財務金融學系資訊管理組，熱愛資訊的我，利用很多時間學習各種程式語言，除了修習C++、Python及Kotlin程式設計課程外，還利用暑假準備程式菁英培訓營，在營期中擔任助教，解決小隊員的問題。此外，參加資訊應用服務能力創新比賽，寫手機app程式，榮獲第三名。現在則參與路博邁產學合作，學習AI人工智慧等內容</p>
+        </div>
+    </div>
+    <div style="padding:30px 80px;"></div>
+    <div class="card" style="width:1200px">
+        <div class="card-body">
+            <h3><b>課外活動</b></h3>
+            <p style="font-size:25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我踴躍參與班級各項體育比賽，如大隊接力、拔河、排球、羽球比賽、游泳接力。我擅長運動，我能1小時游完2公里、1小時跑完10公里，尤其擅長長跑，800公尺跑步秒數為班上前三名。 參加大隊接力競賽。此外，我積極參與社團活動。高一參加社會服務社，至湖口香園紀念教養院陪伴長者、至大同國小陪伴幼童；高二則參加排球社和籃球社。另外，我也曾參加新竹市反毒天使種子培訓營、交大傳播科學營、竹塹文學營。</p>
+        </div>
+    </div>
+    
+<div>
+    <span1 class="rounded-circle" type="button" onclick="myFunction()" style="text-align: center;">
+        <p id="demo"></p>
+        <div id="d" style="padding:130px 80px;font-size: 28px;"><b>興趣</b></div>
+    </span1>
+    <span2 class="rounded-circle" type="button" onclick="myFunction1()" style="text-align: center;">
+        <p id="demo1"></p>
+        <div id="d1" style="padding:130px 80px;font-size: 28px;"><b>程式語言</b></div>
+    </span2>
+    <span3 class="rounded-circle" type="button" onclick="myFunction2()" style="text-align: center;">
+        <p id="demo2"></p>
+        <div id="d2" style="padding:130px 80px;font-size: 28px;"><b>英文能力</b></div>
+    </span3>
+    <span4 class="rounded-circle" type="button" onclick="myFunction3()" style="text-align: center;">
+        <p id="demo3"></p>
+        <div id="d3" style="padding:130px 80px;font-size: 28px;"><b>社團</b></div>
+    </span4>
+    <span5 class="rounded-circle" type="button" onclick="myFunction4()" style="text-align: center;">
+        <p id="demo4"></p>
+        <div id="d4" style="padding:130px 80px;font-size: 28px;"><b>獎項</b></div>
+    </span5>
+</div>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+</div>
+</body>
+</html>
